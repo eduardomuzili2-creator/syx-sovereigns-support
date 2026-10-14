@@ -1,0 +1,80 @@
+name: Relatar problema (Português)
+description: Relate um problema e anexe os logs da sessão. Formulário em português.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a testar o Syx Sovereigns! O inglês é o idioma principal do projeto, mas relatos em português são bem-vindos.
+        Relate um problema por tópico. Procure relatos existentes e acrescente informações a eles quando o problema for o mesmo.
+        Os relatos e anexos são públicos. Confira informações pessoais antes de enviar.
+        Logs: Windows + R → %APPDATA%\songsofsyx\logs. Anexe o log da sessão afetada e o .previous.log correspondente, se existir.
+  - type: input
+    id: mod-version
+    attributes:
+      label: Versão do mod
+      description: Informe a versão instalada, não apenas "a mais recente". Se não encontrar, escreva "não sei".
+      placeholder: "Exemplo: 0.4.0"
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Versão do jogo
+      placeholder: "Exemplo: 0.71.44; versão estável ou beta da Steam"
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-role
+    attributes:
+      label: Quem foi afetado?
+      options:
+        - Anfitrião
+        - Convidado
+        - Ambos ou vários jogadores
+        - Antes de entrar em uma sessão
+        - Não sei
+    validations:
+      required: true
+  - type: input
+    id: occurrence-time
+    attributes:
+      label: Data, horário e fuso
+      description: Pode ser aproximado. Informe horários e fusos separados se os jogadores estiverem em regiões diferentes.
+      placeholder: "Exemplo: 13/10/2026, por volta de 20h35, horário de Cuiabá (UTC-4)"
+    validations:
+      required: true
+  - type: textarea
+    id: session-context
+    attributes:
+      label: Detalhes da sessão
+      description: Número de jogadores; campanha nova ou save carregado; reconexão ou primeira entrada; versão do Windows e outros mods habilitados. Avise se as versões do mod ou jogo eram diferentes entre participantes.
+      placeholder: "Exemplo: 2 jogadores, campanha carregada, convidado reconectou, Windows 11, sem outros mods."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: O que você fez?
+      description: Liste os passos antes do problema. Se não conseguir reproduzir, descreva a última ação de que se lembra.
+      placeholder: |
+        1. O anfitrião...
+        2. O convidado...
+        3. O problema apareceu quando...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Resultado esperado e observado
+      description: Descreva o que deveria ter acontecido e o que aconteceu. Inclua a mensagem exata de erro e diga se ocorre sempre ou apenas às vezes.
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Logs e imagens
+      description: Arraste arquivos .log, .txt ou .zip aqui e aguarde o envio. Identifique anfitrião e convidado. Se faltar um log, explique; o outro jogador pode anexá-lo depois. Não cole apenas o caminho no computador.
+      placeholder: "Log do anfitrião: anexe aqui. Log do convidado: anexe aqui ou explique qual está faltando. Avise se ocultou informações pessoais."
+    validations:
+      required: true
