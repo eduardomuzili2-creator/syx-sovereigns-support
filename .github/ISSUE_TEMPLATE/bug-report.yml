@@ -1,0 +1,96 @@
+name: Bug report (English)
+description: Report a problem and attach session logs. English form.
+title: '[Bug] '
+body:
+- type: markdown
+  attributes:
+    value: 'Thanks for helping test Syx Sovereigns! English is our primary language. A full Portuguese
+      form is also available in the issue chooser.
+
+      Report one problem at a time. Search existing issues first; add logs to an existing matching report
+      when possible.
+
+      Reports and attachments are public. Review personal information before uploading.
+
+      Logs: Windows + R → %APPDATA%\songsofsyx\logs. Attach the affected session''s syx-sovereigns-*.log
+      and matching .previous.log if present.
+
+      '
+- type: input
+  id: mod-version
+  attributes:
+    label: Mod version
+    description: Enter the installed version, not just "latest". Say "unknown" if you cannot find it.
+    placeholder: 'Example: 0.4.0'
+  validations:
+    required: true
+- type: input
+  id: game-version
+  attributes:
+    label: Game version
+    placeholder: 'Example: 0.71.44; Steam stable or beta branch'
+  validations:
+    required: true
+- type: dropdown
+  id: affected-role
+  attributes:
+    label: Who was affected?
+    options:
+    - Host
+    - Guest
+    - Both or multiple players
+    - Before joining a session
+    - Unsure
+  validations:
+    required: true
+- type: input
+  id: occurrence-time
+  attributes:
+    label: Date, time, and time zone
+    description: Approximate is fine. Include separate times/zones if players are in different regions.
+    placeholder: 'Example: 2026-10-13 around 20:35, UTC-4'
+  validations:
+    required: true
+- type: textarea
+  id: session-context
+  attributes:
+    label: Session details
+    description: Number of players; new campaign or loaded save; reconnecting or first join; Windows version
+      and other enabled mods. Note whether players had different mod/game versions.
+    placeholder: 'Example: 2 players, loaded campaign, guest reconnected, Windows 11, no other mods.'
+  validations:
+    required: true
+- type: textarea
+  id: reproduction
+  attributes:
+    label: What did you do?
+    description: List the steps before the problem. If you cannot reproduce it, describe the last action
+      you remember.
+    placeholder: '1. The host...
+
+      2. The guest...
+
+      3. The problem appeared when...
+
+      '
+  validations:
+    required: true
+- type: textarea
+  id: expected-actual
+  attributes:
+    label: Expected and actual result
+    description: Describe what should have happened and what happened instead. Include the exact error
+      message and whether it occurs every time or only sometimes.
+  validations:
+    required: true
+- type: textarea
+  id: attachments
+  attributes:
+    label: Logs and screenshots
+    description: Drag .log, .txt, or .zip files here and wait for upload. Identify host versus guest.
+      If a log is missing, say so; the other player can attach it later. Do not paste only a local file
+      path.
+    placeholder: 'Host log: attach here. Guest log: attach here, or explain which is missing. Note any
+      personal information redacted.'
+  validations:
+    required: true
