@@ -19,6 +19,20 @@ English is the project's primary language. Full reporting instructions and a ded
 
 For multiplayer problems, logs from both the host and the affected guest are especially helpful. If you only have one side, submit it and explain which log is missing; the other player can add theirs in a comment later.
 
+## Find and attach your log files
+
+1. Press **Windows + R**, paste the path below, and press **Enter**:
+
+   ```text
+   %APPDATA%\songsofsyx\logs
+   ```
+
+2. Sort by **Date modified**. Select the `syx-sovereigns-<number>.log` from the affected session, plus its matching `.previous.log` if present.
+3. In the report form, go to **Logs and screenshots** and click **Add Files** below the text box (it may appear as a paperclip icon). Select the files and wait for the upload to finish. Alternatively, drag the files from File Explorer directly into that text box.
+4. Identify which files belong to the **host** and the **guest**. Attach both sides from the same session when possible, then submit the report.
+
+You may attach `.log`, `.txt`, or a `.zip` containing the relevant logs. Pasting the folder path alone does not send any files. If you cannot find a log, explain that in the box and submit the report anyway.
+
 ## Follow the investigation
 
 Updates and requests for more information will appear in the issue comments. A report may need reproduction, more logs, a fix, or confirmation in a newer version. Please mention the exact version when retesting.
