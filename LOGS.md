@@ -14,7 +14,7 @@ On Windows:
 3. Sort by **Date modified** and find the `syx-sovereigns-<number>.log` file for the affected game session. The number is a process identifier, not a player ID. Do not select solely by the largest number.
 4. Include the matching `syx-sovereigns-<number>.previous.log` if it exists. This is the preceding part of a rotated log.
 5. Copy the relevant files to a separate folder soon after the problem: older logs are eventually removed automatically. You may compress those copies into a ZIP. Name your attachment clearly, for example `host-2026-10-13.zip` or `guest-2026-10-13.zip`.
-6. In the issue form's **Logs and screenshots** box, drag the files into the text area, wait for the upload to finish, and submit the report. You can also attach files in a later comment. Do not merely paste a file path from your computer: other people cannot open it.
+6. In the issue form's **Logs and screenshots** box, click **Add Files** below the text box (or its paperclip icon), select the files, and wait for the upload to finish. You can also drag the files directly into the text area. Then submit the report. You can also attach files in a later comment. Do not merely paste a file path from your computer: other people cannot open it.
 
 For multiplayer issues, ask the host and affected guest to each send logs from the **same session**. Include approximate local time and time zone for each participant. Describe any missing logs rather than delaying the entire report.
 
@@ -35,7 +35,7 @@ If neither location contains the logs, submit the report with that information. 
 3. Ordene por **Data de modificação** e procure o `syx-sovereigns-<número>.log` da sessão com problema. O número identifica o processo do jogo; não é a identificação do jogador nem indica qual arquivo é mais recente.
 4. Inclua também o arquivo de mesmo número terminado em `.previous.log`, se existir. Ele contém a parte anterior do log.
 5. Copie os arquivos logo após o problema, pois os mais antigos são removidos automaticamente. Pode compactar as cópias em ZIP. Identifique os anexos como anfitrião ou convidado.
-6. Na aba **Issues**, abra um relato e arraste os arquivos para o campo **Logs and screenshots**. Espere o envio terminar antes de publicar. Também é possível anexá-los em um comentário posterior. Colar apenas o caminho do arquivo no computador não envia seu conteúdo.
+6. Na aba **Issues**, abra um relato e vá ao campo **Logs e imagens** (ou **Logs and screenshots** no formulário em inglês). Clique em **Add Files** (Adicionar arquivos), abaixo da caixa de texto, ou no ícone de clipe, e selecione os arquivos. Também pode arrastá-los diretamente para essa caixa. Espere o envio terminar antes de publicar. Também é possível anexá-los em um comentário posterior. Colar apenas o caminho do arquivo no computador não envia seu conteúdo.
 
 Para problemas multiplayer, envie os logs do anfitrião e do convidado afetado **da mesma sessão**. Se só tiver um deles, informe qual está faltando; o outro jogador pode complementar depois. Inclua horário e fuso de cada participante.
 
