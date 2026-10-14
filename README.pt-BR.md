@@ -19,6 +19,20 @@ O inglês é o idioma principal do projeto. As instruções e o formulário tamb
 
 Para problemas multiplayer, os logs do anfitrião e do convidado afetado são especialmente úteis. Se só tiver um deles, envie-o e explique qual está faltando; o outro jogador pode complementar em um comentário depois.
 
+## Encontrar e anexar os arquivos de log
+
+1. Aperte **Windows + R**, cole o caminho abaixo e pressione **Enter**:
+
+   ```text
+   %APPDATA%\songsofsyx\logs
+   ```
+
+2. Ordene por **Data de modificação**. Selecione o `syx-sovereigns-<número>.log` da sessão com problema e o `.previous.log` correspondente, se existir.
+3. No formulário, vá até **Logs e imagens** e clique em **Add Files** (Adicionar arquivos), abaixo da caixa de texto. O botão pode aparecer como um **ícone de clipe**. Selecione os arquivos e espere o envio terminar. Outra opção é arrastá-los do Explorador de Arquivos diretamente para essa caixa.
+4. Identifique quais arquivos são do **anfitrião** e do **convidado**. Envie os dois lados da mesma sessão quando possível e publique o relato.
+
+É possível anexar `.log`, `.txt` ou um `.zip` com os logs relevantes. Colar apenas o caminho da pasta não envia os arquivos. Se não encontrar um log, explique isso na caixa e envie o relato mesmo assim.
+
 ## Acompanhar a investigação
 
 Atualizações e pedidos de informações aparecerão nos comentários do relato. Pode ser necessário reproduzir o problema, obter mais logs, fazer uma correção ou confirmar o resultado numa versão mais recente. Informe sempre a versão exata ao testar novamente.
