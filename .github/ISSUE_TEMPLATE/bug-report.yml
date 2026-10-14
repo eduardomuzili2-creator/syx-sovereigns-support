@@ -83,13 +83,24 @@ body:
       message and whether it occurs every time or only sometimes.
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: "## Find and attach your log files\n\n1. Press **Windows + R**, paste the path below, and press\
+      \ **Enter**:\n\n   ```text\n   %APPDATA%\\songsofsyx\\logs\n   ```\n\n2. Sort by **Date modified**.\
+      \ Select the `syx-sovereigns-<number>.log` from the affected session, plus its matching `.previous.log`\
+      \ if present.\n3. In the report form, go to **Logs and screenshots** and click **Add Files** below\
+      \ the text box (it may appear as a paperclip icon). Select the files and wait for the upload to\
+      \ finish. Alternatively, drag the files from File Explorer directly into that text box.\n4. Identify\
+      \ which files belong to the **host** and the **guest**. Attach both sides from the same session\
+      \ when possible, then submit the report.\n\nYou may attach `.log`, `.txt`, or a `.zip` containing\
+      \ the relevant logs. Pasting the folder path alone does not send any files. If you cannot find a\
+      \ log, explain that in the box and submit the report anyway.\n\n"
 - type: textarea
   id: attachments
   attributes:
     label: Logs and screenshots
-    description: Drag .log, .txt, or .zip files here and wait for upload. Identify host versus guest.
-      If a log is missing, say so; the other player can attach it later. Do not paste only a local file
-      path.
+    description: Click Add Files (paperclip) below this box, or drag your .log, .txt, or .zip files into
+      it. Wait for uploads to finish. Identify host and guest; explain any missing logs.
     placeholder: 'Host log: attach here. Guest log: attach here, or explain which is missing. Note any
       personal information redacted.'
   validations:
